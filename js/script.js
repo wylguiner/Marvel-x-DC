@@ -25,7 +25,7 @@ smallDCImages.forEach((smallDCImage) => {
         const newSrc = smallDCImage.src;
         const newAlt = smallDCImage.alt;
         const newHero = smallDCImage.dataset.title;
-        const newDesc = smallDCImage.dataset.desc;
+        const newDesc = smallDCImage.dataset.description;
 
         bigDCImage.src = newSrc;
         bigDCImage.alt = newAlt;
