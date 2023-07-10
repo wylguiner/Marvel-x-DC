@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* { /* asterisco para controlar tudo da página */
+    margin: 0; /* configurações para ter melhor \/ */
+    padding: 0; /* controle sobre as margins e paddings*/
+    box-sizing: border-box; /* border-box padrão pra tudo */
+    text-decoration: none; /* configurações para ter \/ */
+    border: none; /* melhor controle dos textos \/ */
+    outline: none; /* e fontes */
+    scroll-behavior: smooth; /* scroll suave da tela */
+    font-family: 'Poppins', sans-serif; /* fonte padrão */
+}
+
+:root { /* criação de variáves de cores para css */
+    --bg-color: #131200;
+    --dc-bg-color: #0077F2;
+    --marvel-bg-color: #EE171F;
+    --text-color: #fff;
+    --main-color: #a856ad;
+}
+
+html { 
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color); /* fundo e \/ */
+    color: var(--text-color); /* cores padrões */
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header { /* estilo da navbar */
+    position: fixed; /* deixa fixado lá em cima */
+    top: 0;
+    left: 0;
+    width: 100%; /* pra ocupar toda tela na horizontal */
+    padding: 2rem 9%; /* joga ele um poquinho pro lado e pra baixo */
+    background: var(--bg-color); /* muda a cor de fundo */
+    display: flex; /* display flex pra ficar na mema linha */
+    justify-content: space-between; /* espaço entre os itens para ocupar todo na horizontal */
+    align-items: center; /* centraliza na vertical */
+    z-index: 100; /* pra ficar sempre na frente */
+}
+
+.logo {
+    font-size: 2.5rem; /* tamanho da fonte */
+    color: var(--text-color); /* cor da fonte */
+    font-weight: 600; /* deixar a fonte gordinha */
+    cursor: default; /* não muda o cursor pra mãozinha */
+}
+
+.navbar a {
+    font-size: 1.7rem; /* tamanho da fonte */
+    color: var(--text-color); /* cor da fonte */
+    margin-left: 4rem; /* cria uma margem entre os itens da lista */
+    transition: .3s; /* tempo da transição */
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color); /* muda a cor pra fazer transição */
+}
+
+#menu-icon {
+    font-size: 3.6rem; /* tamanho do ícone */
+    color: var(--text-color); /* cor do ícone */
+    display: none; /* ícone some para só aparecer em telas pequenas */
+}
+
+.home {
+    display: flex; /* para alinhar tudo */
+    justify-content: center; /* alinha no meio na vertical */
+    align-items: center; /* alinha no meio na horizontal */
+    gap: 2rem; /* espaço entre as frases e a img */ 
+}
+
+.home-img img {
+    width:30vh; /* tamanho da imagem */
+}
+
+.home-content h3 {
+    font-size: 3.2rem; /* tamanho da fonte */
+    font-weight: 700; /* grossura da fonte */
+}
+
+.home-content h3:nth-of-type(2) { /*só pega no segundo h3 da classe */
+    margin-bottom: 2rem; /* margin em baixo*/
+}
+
+span {
+    color: var(--main-color); /* cor */
+}
+
+.home-content h1 {
+    font-size: 5.6rem; /* tamanho da fonte */
+    font-weight: 700; /* grossura da fonte */
+    line-height: 1.3; /* espaço entre as linhas */
+}
+
+.home-content p {
+    font-size: 1.6rem; /* tamanho da fonte */
+    margin-bottom: 5rem; /* espaço embaixo */
+}
+
+.btn {
+    display: inline-block; 
+    padding: 1rem 2.8rem;
+    background-color: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--text-color);
+    letter-spacing: .1rem; /* espaço entre as letras */
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.marvel {
+    background: var(--marvel-bg-color);
+}
+
+.marvel .marvel-head h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    font-size: 5.6rem; /* tamanho da fonte */
+    font-weight: 700; /* grossura da fonte */
+}
+
+.marvel-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marvel-content .marvel-heroes {
+    width: 50%;
+}
+
+.marvel-heroes img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+.marvel-content .marvel-pic {
+    width: 50%;
+    text-align: center;
+}
+
+.dc {
+    background: var(--dc-bg-color);
+}
+
+.dc .dc-head h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    font-size: 5.6rem; /* tamanho da fonte */
+    font-weight: 700; /* grossura da fonte */ 
+}
+
+.dc-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dc-content .dc-heroes {
+    width: 50%;
+}
+
+.dc-heroes img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+.dc-content .dc-pic {
+    width: 50%;
+    text-align: center;
+}

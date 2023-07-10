@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> <!-- custom css -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- box icons -->
+    <title>Marvel x DC</title>
+</head>
+
+<body>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Marvel x DC</a>
+        <i class=" bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#marvel">Marvel</a>
+            <a href="#dc">DC</a>
+            <a href="#battle">Battle</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello! Welcome to the</h3>
+            <h1>Greatest battle</h1>
+            <h3>In the history of the <span>MULTIVERSE!</span></h3>
+            <p>Choose your super-heroes for the battle!</p>
+            <a href="#marvel" class="btn">Let's Battle!</a>
+        </div>
+        
+        <div class="home-img">
+            <img src="imgs/marvel x dc.png" alt="">
+        </div>
+    </section>
+
+    <section class="marvel" id="marvel">
+        <div class="marvel-head">
+            <h1>Choose your Marvel Hero</h1>
+        </div>
+        <div class="marvel-content">
+            <div class="marvel-heroes">
+                <img src="imgs/spiderman.png" alt="Spider Man" id="miranha">
+                <img src="imgs/ironman.png" alt="Spider Man" id="homemferro">
+                <img src="imgs/capamerica.png" alt="Spider Man" id="capitao">
+                <img src="imgs/drstrange.png" alt="Spider Man" id="strange">
+                <img src="imgs/thor.png" alt="Thor" id="thor">
+                <img src="imgs/wolverine.png" alt="wolverine" id="wolverine">
+                <img src="imgs/gaviao.png" alt="Gaviao Arqueiro" id="gaviao">
+                <img src="imgs/formiga.png" alt="Homem Formiga" id="formiga">
+            </div>
+            <div class="marvel-pic">
+                <img src="imgs/spiderman.png" id="marvel-selected">
+                <h1 id="marvel-name">Spider man</h1>
+                <p id="marvel-desc">Spider-Man has enhanced strength, agility, the ability to stick to surfaces, and a 'spider-sense' that alerts him to imminent dangers.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="dc" id="dc">
+        <div class="dc-head">
+            <h1>Choose your DC Hero</h1>
+        </div>
+        <div class="dc-content">
+            <div class="dc-heroes">
+                <img src="imgs/superman.png" alt="Super Man" data-title="Super Man" data-description="Superman possesses incredible superhuman abilities, including super strength, speed, invulnerability, and the power of flight. He also has heat vision, freezing breath, and the ability to see through objects with his x-ray vision." id="super">
+                <img src="imgs/batman.png" alt="Batman" data-title="Batman" data-description="Armed with a brilliant strategic mind, Batman uses his vast wealth and resources to equip himself with cutting-edge gadgets and technology. His exceptional physical prowess enables him to engage in acrobatic combat, displaying unmatched skills in hand-to-hand combat, stealth, and detective work." id="batman">
+                <img src="imgs/flash.png" alt="Flash" data-title="Flash" data-description="The Flash, also known as the Scarlet Speedster, is a superhero renowned for his incredible superhuman speed and agility. As the fastest man alive, the Flash possesses the ability to move, think, and react at extraordinary velocities, making him a formidable force against crime and injustice. " id="flash">
+                <img src="imgs/lanterna.png" alt="Lanterna Verde" data-title="Green Lantern" data-description="Chosen for his exceptional courage and integrity, a Green Lantern's power ring grants them the ability to create constructs limited only by their imagination. These constructs can manifest as weapons, shields, or even fantastical constructs to overcome any challenge." id="lanterna">
+                <img src="imgs/mulhermara.png" alt="Mulher Maravilha" data-title="Wonder Woman" data-description="Wonder Woman is a symbol of power, compassion, and justice. Endowed with superhuman strength, speed, and agility, Wonder Woman is a formidable warrior skilled in various forms of combat. Armed with her iconic Lasso of Truth, which compels honesty from anyone it ensnares, and her indestructible bracelets, she is a force to be reckoned with" id="maravilha">
+                <img src="imgs/ajax.png" alt="Caçador de Marte" data-title="Martian Hunter" data-description="The Martian Manhunter, also known as J'onn J'onzz, can shape-shift. He has superhuman strength, speed, and endurance, along with the ability to fly and phase through solid objects. The Martian Manhunter is also a powerful telepath, capable of reading minds, projecting illusions, and manipulating objects with his mind." id="ajax">
+                <img src="imgs/ciborgue.png" alt="Ciborgue" data-title="Cyborg" data-description="Cyborg, also known as Victor Stone, is a superhero with a cybernetic body that grants him superhuman strength, speed, and durability. He has the ability to interface with technology, access information, and control machines. Equipped with various weapons and gadgets, Cyborg is a skilled hacker and strategist." id="ciborgue">
+                <img src="imgs/shazam.png" alt="Shazam" data-title="Shazam" data-description="Shazam, also known as Billy Batson, can transform into a superhuman adult by saying 'Shazam.' In his superhero form, he possesses incredible strength, invulnerability, flight, and the ability to shoot lightning bolts. Shazam fights to protect the innocent and upholds justice with his powers." id="shazam">
+            </div>
+            <div class="dc-pic">
+                <img src="imgs/superman.png" id="dc-selected">
+                <h1 id="dc-name">Super man</h1>
+                <p id="dc-desc">Superman possesses incredible superhuman abilities, including super strength, speed, invulnerability, and the power of flight. He also has heat vision, freezing breath, and the ability to see through objects with his x-ray vision. </p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+<script src="js/script.js"></script>
+</html>
