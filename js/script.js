@@ -1,3 +1,12 @@
+// navbar
+let menuIcon = document.getElementById('menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');  
+};
+
 // Marvel Heroes
 
 const bigMarvelImage = document.getElementById('marvel-selected'); //pega o ID da imagem grande da marvel
