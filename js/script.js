@@ -1,14 +1,22 @@
 // Marvel Heroes
 
 const bigMarvelImage = document.getElementById('marvel-selected'); //pega o ID da imagem grande da marvel
+const marvelHero = document.getElementById('marvel-name');
+const marvelDesc = document.getElementById('marvel-desc');
 
 const smallMarvelImages = document.querySelectorAll('.marvel-heroes img') //pega todas as imgs pequenas marvel
 
 smallMarvelImages.forEach((smallMarvelImage) => {
     smallMarvelImage.addEventListener('click', () => {
         const newSrc = smallMarvelImage.src;
+        const newAlt = smallMarvelImage.alt;
+        const newHero = smallMarvelImage.dataset.title;
+        const newDesc = smallMarvelImage.dataset.description;
 
         bigMarvelImage.src = newSrc;
+        bigMarvelImage.alt = newAlt;
+        marvelHero.textContent = newHero;
+        marvelDesc.textContent = newDesc;
     });
 });
 
